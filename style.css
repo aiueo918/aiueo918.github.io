@@ -1,0 +1,86 @@
+/* 全体のスタイル */
+body {
+    font-family: Arial, sans-serif; /* お好みのフォントに変更 */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333; /* デフォルトの文字色 */
+    background-color: #f4f4f4; /* 背景色 */
+    
+    /* 背景画像を全体に適用 */
+    background-image: url('stein.jpg'); /* あなたの画像ファイル名 */
+    background-size: cover; /* 画面全体を覆うように拡大・縮小 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定（スクロールしても動かない） */
+    background-position: center center; /* 画像を中央に配置 */
+
+    color: white; /* 背景画像が見やすいように文字色を白に設定 */
+}
+
+/* ヘッダーとナビゲーション */
+header {
+    background: rgba(0, 0, 0, 0.7); /* 半透明の黒 */
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky; /* スクロールしてもヘッダーを固定 */
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* ホバー時の色 */
+}
+
+/* メインコンテンツのセクション */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 100vh; /* 各セクションが画面いっぱいに広がるように */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* コンテンツ部分の背景を半透明に */
+    margin-bottom: 20px;
+}
+
+section:last-of-type {
+    margin-bottom: 0; /* 最後のセクションの下マージンをなくす */
+}
+
+h1, h2 {
+    color: #fff; /* 見出しの色 */
+    margin-bottom: 20px;
+}
+
+/* Heroセクション (一番上の「こんにちは」が表示される部分) */
+#hero {
+    background-color: transparent; /* 背景画像が見えるように透明に */
+    min-height: 100vh; /* 画面いっぱいに表示 */
+}
+
+/* フッター */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
